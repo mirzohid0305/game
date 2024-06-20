@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: wheat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.container {
+    max-width: 1146px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.header {
+    height: 100px;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 44px;
+}
+
+.header__logo {
+    align-content: center;
+}
+
+.header__list {
+    display: flex;
+    gap: 88px;
+    align-items: center;
+}
+
+
+
+.header__btn {
+    color: white;
+    background-color: #FA9021;
+    padding: 10px 16px;
+    border-radius: 8px;
+    height: min-content;
+
+}
+
+.header__burger-menu {
+    display: none;
+}
+
+#header-trigger:checked+.header__list {
+    display: block;
+}
+
+@media screen and (max-width: 750px) {
+    .header__wrapper {
+        gap: 10px;
+    }
+
+    .header__list {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header__wrapper {
+        gap: 5px;
+    }
+
+    .header__list {
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .header__list {
+        display: none;
+        position: absolute;
+        top: 20px;
+    }
+
+    .header__burger-menu {
+        display: block;
+        color: white;
+    }
+}
+
+@media print {
+    .header__logo {
+        display: none;
+    }
+}
+
+/*home*/
+
+.home__wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.home__wrapper-1 {
+    margin-left: 40px;
+    padding-top: 30px;
+}
+
+.home__title-3 {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 31.04px;
+    text-align: left;
+    color: #FA9021;
+}
+
+.home__title {
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 77.6px;
+    text-align: left;
+
+}
+
+.home__text {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.home__link{
+    border: 1px solid #FA9021;
+    padding: 12px 10px;
+    background-color:#FA9021;
+    border-radius: 20px;
+}
+
+.home__wrapper-2 {
+    width: 639px;
+    height: 635px;
+    top: 182px;
+    left: 719px;
+    gap: 0px;
+}
